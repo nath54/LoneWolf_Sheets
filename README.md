@@ -21,7 +21,7 @@ Aussi, j'ai designé rapidement cette app pour qu'elle fonctionne bien sur tél�
   - Liste des Armes (Avec Sciences des Armes, Carquois et flèches)
   - Une page où l'on peut sauvegarder la page où l'on est, et où on peut aussi prendre diverses notes
 
-## TODO
+## Todo
 
  - Rajouter les guides pour les divers objets et compétences du jeu
  - Améliorer l'affichage sur pc et certains téléphones/tablettes
