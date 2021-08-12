@@ -18,3 +18,6 @@ Ceci est un outil pour pouvoir jouer aux livres dont vous êtes le héros, de la
   - Liste des Armes (Avec Sciences des Armes, Carquois et flèches)
   - Une page où l'on peut sauvegarder la page où l'on est, et où on peut aussi prendre diverses notes
 
+## Téléchargement
+
+Vous pouvez télécharger l'application ici : https://github.com/nath54/LoneWolf_Sheets/releases
