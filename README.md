@@ -15,11 +15,11 @@ Aussi, j'ai designé rapidement cette app pour qu'elle fonctionne bien sur tél�
 
  - Vous pouvez jouer sur plusieurs parties en même temps.
  - Contient les fiches suivantes : 
-  - Grandes disciplines (avec sac à dos, repars et bourse)
-  - Feuille de combat
-  - Objets Spéciaux (avec arme kaï)
-  - Liste des Armes (Avec Sciences des Armes, Carquois et flèches)
-  - Une page où l'on peut sauvegarder la page où l'on est, et où on peut aussi prendre diverses notes
+   - Grandes disciplines (avec sac à dos, repars et bourse)
+   - Feuille de combat
+   - Objets Spéciaux (avec arme kaï)
+   - Liste des Armes (Avec Sciences des Armes, Carquois et flèches)
+   - Une page où l'on peut sauvegarder la page où l'on est, et où on peut aussi prendre diverses notes
 
 ## Todo
 
