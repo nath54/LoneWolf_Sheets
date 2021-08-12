@@ -22,7 +22,8 @@ var USER: Dictionary = {
 	"arme_kai_propriete" : "",
 	"arme_kai_bonus_habilete_propriete" : "",
 	
-	"armes" : ["", ""],
+	"arme_1" : "",
+	"arme_2" : "",
 	
 	"sciences_armes" : {
 		"poignard": "0",
@@ -37,7 +38,7 @@ var USER: Dictionary = {
 		"glaive": "0"
 	},
 	
-	"carquois" : false,
+	"carquois" : "",
 	"fleches" : "0",
 	
 	"page": "",
@@ -77,7 +78,8 @@ func reset_user(username: String) -> void:
 		"arme_kai_propriete" : "",
 		"arme_kai_bonus_habilete_propriete" : "",
 		
-		"armes" : ["", ""],
+		"arme_1" : "",
+		"arme_2" : "",
 		
 		"sc_poignard": "0",
 		"sc_lance": "0",
@@ -89,7 +91,7 @@ func reset_user(username: String) -> void:
 		"sc_epee": "0",
 		"sc_baton": "0",
 		"sc_glaive": "0",
-		"carquois" : false,
+		"carquois" : "",
 		"nb_fleches" : "0",
 	
 		"page": "",

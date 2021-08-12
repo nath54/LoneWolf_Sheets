@@ -1,5 +1,7 @@
 extends Control
 
+func _ready():
+	$ScrollContainer/GridContainer/Session.text = "Session : "+Session.USER["name"]
 
 
 func _on_BtGrandesDisciplines_pressed():
@@ -19,10 +21,12 @@ func _on_BtObjetsSpeciaux_pressed():
 
 
 func _on_BtArmes_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://sheets/Armes.tscn")
+
 
 func _on_BtSave_pressed():
 	Session.save_user()
+
 
 func _on_BtQuitSession_pressed():
 	Session.save_user()
@@ -32,6 +36,7 @@ func _on_BtQuitSession_pressed():
 func _on_Bt_Oui_pressed():
 	Session.reset_user(Session.USER["name"])
 	$Alert_Reinit_Session.visible = false
+
 
 func _on_Bt_Non_pressed():
 	$Alert_Reinit_Session.visible = false
@@ -48,3 +53,7 @@ func _on_BtResetSession_pressed():
 func _on_BtQuit_pressed():
 	Session.save_user()
 	get_tree().quit()
+
+
+func _on_BtGuide_pressed():
+	pass # Replace with function body.

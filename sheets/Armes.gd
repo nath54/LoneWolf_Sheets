@@ -23,6 +23,8 @@ func _ready():
 	load_sheet()
 
 func save_sheet() -> void:
+	Session.USER["arme_1"] = arme1.text
+	Session.USER["arme_2"] = arme2.text
 	Session.USER["sc_poignard"] = sc_poignard.text
 	Session.USER["sc_lance"] = sc_lance.text
 	Session.USER["sc_masse"] = sc_masse.text
@@ -39,6 +41,8 @@ func save_sheet() -> void:
 	Session.save_user()
 
 func load_sheet() -> void:
+	arme1.text = Session.USER["arme_1"]
+	arme2.text = Session.USER["arme_2"]
 	sc_poignard.text = Session.USER["sc_poignard"]
 	sc_lance.text = Session.USER["sc_lance"]
 	sc_masse.text = Session.USER["sc_masse"]
