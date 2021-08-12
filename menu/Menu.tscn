@@ -1,0 +1,215 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://res/imgs/old_sheet_1.jpg" type="Texture" id=1]
+[ext_resource path="res://res/fonts/kingthings-petrock/Kingthings Petrock.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://menu/Menu.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 60
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 0.407843, 0.407843, 0.407843, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 34.0
+margin_top = 53.0
+margin_right = -32.0
+margin_bottom = -48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 654.0
+margin_bottom = 1339.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 50
+alignment = 1
+
+[node name="Label" type="Label" parent="ScrollContainer/GridContainer"]
+margin_top = 128.0
+margin_right = 654.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 1 )
+text = "Session ; "
+align = 1
+valign = 1
+
+[node name="BtGrandesDisciplines" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 226.0
+margin_right = 654.0
+margin_bottom = 291.0
+custom_fonts/font = SubResource( 2 )
+text = "Grandes Disciplines"
+
+[node name="BtAffaires" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 341.0
+margin_right = 654.0
+margin_bottom = 406.0
+custom_fonts/font = SubResource( 2 )
+text = "Sac à dos"
+
+[node name="BtCombats" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 456.0
+margin_right = 654.0
+margin_bottom = 521.0
+custom_fonts/font = SubResource( 2 )
+text = "Combats"
+
+[node name="BtObjetsSpeciaux" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 571.0
+margin_right = 654.0
+margin_bottom = 636.0
+custom_fonts/font = SubResource( 2 )
+text = "Objets Spéciaux"
+
+[node name="BtArmes" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 686.0
+margin_right = 654.0
+margin_bottom = 751.0
+custom_fonts/font = SubResource( 2 )
+text = "Armes"
+
+[node name="BtPage" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 801.0
+margin_right = 654.0
+margin_bottom = 866.0
+custom_fonts/font = SubResource( 2 )
+text = "Page du livre"
+
+[node name="BtResetSession" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 916.0
+margin_right = 654.0
+margin_bottom = 981.0
+custom_fonts/font = SubResource( 2 )
+text = "Réinitialiser la session"
+
+[node name="BtSave" type="Button" parent="ScrollContainer/GridContainer"]
+visible = false
+margin_top = 973.0
+margin_right = 654.0
+margin_bottom = 1038.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 2 )
+text = "Sauvegarder"
+
+[node name="BtQuitSession" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 1031.0
+margin_right = 654.0
+margin_bottom = 1096.0
+custom_fonts/font = SubResource( 2 )
+text = "Quitter la Session"
+
+[node name="BtQuit" type="Button" parent="ScrollContainer/GridContainer"]
+margin_top = 1146.0
+margin_right = 654.0
+margin_bottom = 1211.0
+custom_fonts/font = SubResource( 2 )
+text = "Quitter"
+
+[node name="Alert_Reinit_Session" type="CenterContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Alert_Reinit_Session"]
+margin_left = 60.0
+margin_top = 420.0
+margin_right = 660.0
+margin_bottom = 1020.0
+rect_min_size = Vector2( 600, 600 )
+
+[node name="Label2" type="Label" parent="Alert_Reinit_Session/Panel"]
+anchor_right = 1.0
+margin_left = 25.0
+margin_top = 25.0
+margin_right = -25.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 3 )
+text = "Êtes vous sur de vouloir réinitialiser la session ?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Alert_Reinit_Session/Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 25.0
+margin_top = -422.0
+margin_right = -25.0
+custom_constants/separation = 50
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bt_Oui" type="Button" parent="Alert_Reinit_Session/Panel/VBoxContainer"]
+margin_top = 110.0
+margin_right = 550.0
+margin_bottom = 186.0
+custom_fonts/font = SubResource( 4 )
+text = "Oui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bt_Non" type="Button" parent="Alert_Reinit_Session/Panel/VBoxContainer"]
+margin_top = 236.0
+margin_right = 550.0
+margin_bottom = 312.0
+custom_fonts/font = SubResource( 4 )
+text = "Non"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtGrandesDisciplines" to="." method="_on_BtGrandesDisciplines_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtAffaires" to="." method="_on_BtAffaires_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtCombats" to="." method="_on_BtCombats_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtObjetsSpeciaux" to="." method="_on_BtObjetsSpeciaux_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtArmes" to="." method="_on_BtArmes_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtPage" to="." method="_on_BtPage_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtResetSession" to="." method="_on_BtResetSession_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtSave" to="." method="_on_BtSave_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtQuitSession" to="." method="_on_BtQuitSession_pressed"]
+[connection signal="pressed" from="ScrollContainer/GridContainer/BtQuit" to="." method="_on_BtQuit_pressed"]
+[connection signal="pressed" from="Alert_Reinit_Session/Panel/VBoxContainer/Bt_Oui" to="." method="_on_Bt_Oui_pressed"]
+[connection signal="pressed" from="Alert_Reinit_Session/Panel/VBoxContainer/Bt_Non" to="." method="_on_Bt_Non_pressed"]

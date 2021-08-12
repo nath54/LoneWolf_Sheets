@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="LoneWolf_Sheets"
+config/description="Un outil pour jouer aux livres dont on est le héros de la série des Loups Solitaires"
+run/main_scene="res://menu/Select_Session.tscn"
+config/icon="res://icon.png"
+config/windows_native_icon="res://icon.ico"
+
+[autoload]
+
+Session="*res://global/Session.gd"
+
+[display]
+
+window/size/width=720
+window/size/height=1440
+window/energy_saving/keep_screen_on=false
+window/handheld/orientation="sensor_portrait"
+
+[gui]
+
+theme/use_hidpi=true
+theme/custom="res://res/themes/Theme1.tres"
+theme/custom_font="res://res/fonts/kingthings-petrock/Font1.tres"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

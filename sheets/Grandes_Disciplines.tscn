@@ -1,0 +1,382 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://res/fonts/kingthings-petrock/Kingthings Petrock.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://res/imgs/old_sheet_1.jpg" type="Texture" id=2]
+[ext_resource path="res://sheets/Grandes_Disciplines.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Grandes_Disciplines" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 0.470588, 0.466667, 0.466667, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Titre" type="Label" parent="."]
+margin_left = 94.0
+margin_top = 111.0
+margin_right = 666.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 1 )
+text = "Grandes Disciplines"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bt_Menu" type="Button" parent="."]
+margin_left = 24.6132
+margin_top = 24.6132
+margin_right = 124.613
+margin_bottom = 79.6132
+rect_min_size = Vector2( 100, 55 )
+custom_fonts/font = SubResource( 2 )
+text = "Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bt_Annuler" type="Button" parent="."]
+margin_left = 585.613
+margin_top = 24.6132
+margin_right = 696.613
+margin_bottom = 79.6132
+rect_min_size = Vector2( 100, 55 )
+custom_fonts/font = SubResource( 2 )
+text = "Annuler"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 94.0
+margin_top = 187.0
+margin_right = -52.0
+margin_bottom = -62.0
+follow_focus = true
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
+margin_right = 539.0
+margin_bottom = 1081.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
+margin_right = 539.0
+margin_bottom = 1081.0
+custom_constants/separation = 25
+
+[node name="Ligne1" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_right = 539.0
+margin_bottom = 54.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne1"]
+margin_right = 17.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "1"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne1"]
+margin_left = 21.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+
+[node name="Ligne2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 79.0
+margin_right = 539.0
+margin_bottom = 133.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne2"]
+margin_right = 26.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "2"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne2"]
+margin_left = 30.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+
+[node name="Ligne3" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 158.0
+margin_right = 539.0
+margin_bottom = 212.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne3"]
+margin_right = 27.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "3"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne3"]
+margin_left = 31.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+
+[node name="Ligne4" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 237.0
+margin_right = 539.0
+margin_bottom = 291.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne4"]
+margin_right = 28.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "4"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne4"]
+margin_left = 32.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+
+[node name="Ligne5" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 316.0
+margin_right = 539.0
+margin_bottom = 370.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne5"]
+margin_right = 26.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "5"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne5"]
+margin_left = 30.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+
+[node name="Ligne6" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 395.0
+margin_right = 539.0
+margin_bottom = 449.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne6"]
+margin_right = 25.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "6"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne6"]
+margin_left = 29.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 1 missions du nouvel ordre kai)"
+
+[node name="Ligne7" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 474.0
+margin_right = 539.0
+margin_bottom = 528.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne7"]
+margin_right = 24.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "7"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne7"]
+margin_left = 28.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 2 missions du nouvel ordre kai)"
+
+[node name="Ligne8" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 553.0
+margin_right = 539.0
+margin_bottom = 607.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne8"]
+margin_right = 24.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "8"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne8"]
+margin_left = 28.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 3 missions du nouvel ordre kai)"
+
+[node name="Ligne9" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 632.0
+margin_right = 539.0
+margin_bottom = 686.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne9"]
+margin_right = 25.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "9"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne9"]
+margin_left = 29.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 4 missions du nouvel ordre kai)"
+
+[node name="Ligne10" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 711.0
+margin_right = 539.0
+margin_bottom = 765.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne10"]
+margin_right = 35.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "10"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne10"]
+margin_left = 39.0
+margin_right = 539.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 500, 0 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 5 missions du nouvel ordre kai)"
+
+[node name="Ligne11" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 790.0
+margin_right = 539.0
+margin_bottom = 844.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne11"]
+margin_right = 26.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "11"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne11"]
+margin_left = 30.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 6 missions du nouvel ordre kai)"
+
+[node name="Ligne12" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 869.0
+margin_right = 539.0
+margin_bottom = 923.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne12"]
+margin_right = 35.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "12"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne12"]
+margin_left = 39.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 7 missions du nouvel ordre kai)"
+
+[node name="Ligne13" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 948.0
+margin_right = 539.0
+margin_bottom = 1002.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne13"]
+margin_right = 36.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "13"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne13"]
+margin_left = 40.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 8 missions du nouvel ordre kai)"
+
+[node name="Ligne14" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
+margin_top = 1027.0
+margin_right = 539.0
+margin_bottom = 1081.0
+
+[node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne14"]
+margin_right = 37.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "14"
+
+[node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne14"]
+margin_left = 41.0
+margin_right = 539.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 4 )
+max_length = 300
+placeholder_text = "(si vous avez accomplis avec succès 9 missions du nouvel ordre kai)"
+[connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
+[connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]
