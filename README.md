@@ -6,7 +6,7 @@ Ceci est un outil pour pouvoir jouer aux livres dont vous êtes le héros, de la
 
 ## Avertissement
 
-==J'ai fait cette application en me basant sur la feuille d'aventure du livre "Loup Solitaire: Au bord de l'abîme", il se peut que certains autres chapitres aient une feuille d'aventure un peu différente, dans ce cas là, vous pouvez me demander de rajouter d'autres pages dans les issues du projet de github==
+**J'ai fait cette application en me basant sur la feuille d'aventure du livre "Loup Solitaire: Au bord de l'abîme", il se peut que certains autres chapitres aient une feuille d'aventure un peu différente, dans ce cas là, vous pouvez me demander de rajouter d'autres pages dans les issues du projet de github**
 
 ## Fonctionnalités
 
