@@ -25,7 +25,6 @@ Aussi, j'ai designé rapidement cette app pour qu'elle fonctionne bien sur tél�
 
  - Rajouter les guides pour les divers objets et compétences du jeu
  - Améliorer l'affichage sur pc et certains téléphones/tablettes
- - Ajout de boutons + et - pour les LineEdit où il est censé y avoir des nombres
 
 ## Téléchargement
 
