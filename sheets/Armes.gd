@@ -3,16 +3,16 @@ extends Control
 onready var arme1: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/ListeArme/Arme1
 onready var arme2: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/ListeArme/Arme2
 
-onready var sc_poignard: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard/Poignard
-onready var sc_lance: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance/Lance
-onready var sc_masse: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes/Masse
-onready var sc_sabre: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre/Sabre
-onready var sc_marteau: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau/Marteau
-onready var sc_arc: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc/Arc
-onready var sc_hache: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache/Hache
-onready var sc_epee: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee/Epee
-onready var sc_baton: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton/Baton
-onready var sc_glaive: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive/Glaive
+onready var sc_poignard: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard/HBoxContainer/Poignard
+onready var sc_lance: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance/HBoxContainer/Lance
+onready var sc_masse: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes/HBoxContainer/Masse
+onready var sc_sabre: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre/HBoxContainer/Sabre
+onready var sc_marteau: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau/HBoxContainer/Marteau
+onready var sc_arc: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc/HBoxContainer/Arc
+onready var sc_hache: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache/HBoxContainer/Hache
+onready var sc_epee: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee/HBoxContainer/Epee
+onready var sc_baton: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton/HBoxContainer/Baton
+onready var sc_glaive: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive/HBoxContainer/Glaive
 
 onready var carquois: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/Carquois/Carquois
 onready var nb_fleches: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/NombreFleches/NombreFleches
