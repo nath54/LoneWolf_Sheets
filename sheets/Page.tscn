@@ -7,22 +7,22 @@
 [ext_resource path="res://menu/BtPlus.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 35
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 100
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 30
+size = 50
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 24
+size = 60
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -57,10 +57,10 @@ __meta__ = {
 }
 
 [node name="Bt_Annuler" type="Button" parent="."]
-margin_left = 560.613
+margin_left = 840.613
 margin_top = 24.6132
-margin_right = 671.613
-margin_bottom = 79.6132
+margin_right = 1040.61
+margin_bottom = 105.613
 rect_min_size = Vector2( 100, 55 )
 custom_fonts/font = SubResource( 1 )
 text = "Annuler"
@@ -82,26 +82,26 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
-margin_right = 500.0
-margin_bottom = 1063.0
+margin_right = 858.0
+margin_bottom = 1213.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
-margin_right = 500.0
-margin_bottom = 1063.0
+margin_right = 858.0
+margin_bottom = 1213.0
 size_flags_horizontal = 3
 custom_constants/separation = 50
 
 [node name="Page" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_right = 500.0
-margin_bottom = 123.0
+margin_right = 858.0
+margin_bottom = 217.0
 custom_constants/separation = 15
 
 [node name="TitrePage" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Page"]
-margin_right = 500.0
-margin_bottom = 65.0
+margin_right = 858.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Page :"
 align = 1
@@ -111,40 +111,40 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Page"]
-margin_top = 80.0
-margin_right = 500.0
-margin_bottom = 123.0
+margin_top = 136.0
+margin_right = 858.0
+margin_bottom = 217.0
 
 [node name="Page" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer"]
-margin_right = 406.0
-margin_bottom = 43.0
-rect_min_size = Vector2( 250, 0 )
+margin_right = 700.0
+margin_bottom = 81.0
+rect_min_size = Vector2( 700, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "La page du livre où vous en êtes"
 
 [node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 410.0
-margin_right = 453.0
-margin_bottom = 43.0
+margin_left = 704.0
+margin_right = 779.0
+margin_bottom = 81.0
 path_lineedit = "Page"
 
 [node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 457.0
-margin_right = 500.0
-margin_bottom = 43.0
+margin_left = 783.0
+margin_right = 858.0
+margin_bottom = 81.0
 path_lineedit = "Page"
 
 [node name="Notes" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 173.0
-margin_right = 500.0
-margin_bottom = 1063.0
+margin_top = 267.0
+margin_right = 858.0
+margin_bottom = 1213.0
 custom_constants/separation = 25
 
 [node name="TitreNotes" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Notes"]
-margin_right = 500.0
-margin_bottom = 65.0
+margin_right = 858.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Notes :"
 align = 1
@@ -154,10 +154,11 @@ __meta__ = {
 }
 
 [node name="Notes" type="TextEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Notes"]
-margin_top = 90.0
-margin_right = 500.0
-margin_bottom = 890.0
+margin_top = 146.0
+margin_right = 858.0
+margin_bottom = 946.0
 rect_min_size = Vector2( 500, 800 )
+size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 show_line_numbers = true
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]

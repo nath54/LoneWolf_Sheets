@@ -5,22 +5,22 @@
 [ext_resource path="res://sheets/Grandes_Disciplines.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 100
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 35
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 40
+size = 75
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 30
+size = 47
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -43,12 +43,13 @@ __meta__ = {
 }
 
 [node name="Titre" type="Label" parent="."]
-margin_left = 94.0
-margin_top = 111.0
-margin_right = 666.0
-margin_bottom = 176.0
+margin_left = 168.544
+margin_top = 194.862
+margin_right = 905.544
+margin_bottom = 315.862
+rect_min_size = Vector2( 0, 121 )
 custom_fonts/font = SubResource( 1 )
-text = "Grandes Disciplines"
+text = "Grandes Disciplines :"
 align = 1
 valign = 1
 __meta__ = {
@@ -68,10 +69,10 @@ __meta__ = {
 }
 
 [node name="Bt_Annuler" type="Button" parent="."]
-margin_left = 585.613
+margin_left = 833.613
 margin_top = 24.6132
-margin_right = 696.613
-margin_bottom = 79.6132
+margin_right = 1033.61
+margin_bottom = 105.613
 rect_min_size = Vector2( 100, 55 )
 custom_fonts/font = SubResource( 2 )
 text = "Annuler"
@@ -83,9 +84,9 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 94.0
-margin_top = 187.0
+margin_top = 371.0
 margin_right = -52.0
-margin_bottom = -62.0
+margin_bottom = -67.0
 follow_focus = true
 scroll_horizontal_enabled = false
 __meta__ = {
@@ -93,290 +94,290 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
-margin_right = 539.0
-margin_bottom = 1081.0
+margin_right = 861.0
+margin_bottom = 1613.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
-margin_right = 539.0
-margin_bottom = 1081.0
+margin_right = 861.0
+margin_bottom = 1613.0
 custom_constants/separation = 25
 
 [node name="Ligne1" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_right = 539.0
-margin_bottom = 54.0
+margin_right = 861.0
+margin_bottom = 92.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne1"]
-margin_right = 17.0
-margin_bottom = 54.0
+margin_right = 24.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "1"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne1"]
-margin_left = 21.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 28.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
 
 [node name="Ligne2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 79.0
-margin_right = 539.0
-margin_bottom = 133.0
+margin_top = 117.0
+margin_right = 861.0
+margin_bottom = 209.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne2"]
-margin_right = 26.0
-margin_bottom = 54.0
+margin_right = 42.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "2"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne2"]
-margin_left = 30.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 46.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
 
 [node name="Ligne3" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 158.0
-margin_right = 539.0
-margin_bottom = 212.0
+margin_top = 234.0
+margin_right = 861.0
+margin_bottom = 326.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne3"]
-margin_right = 27.0
-margin_bottom = 54.0
+margin_right = 43.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "3"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne3"]
-margin_left = 31.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 47.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
 
 [node name="Ligne4" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 237.0
-margin_right = 539.0
-margin_bottom = 291.0
+margin_top = 351.0
+margin_right = 861.0
+margin_bottom = 443.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne4"]
-margin_right = 28.0
-margin_bottom = 54.0
+margin_right = 46.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "4"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne4"]
-margin_left = 32.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 50.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
 
 [node name="Ligne5" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 316.0
-margin_right = 539.0
-margin_bottom = 370.0
+margin_top = 468.0
+margin_right = 861.0
+margin_bottom = 560.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne5"]
-margin_right = 26.0
-margin_bottom = 54.0
+margin_right = 43.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "5"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne5"]
-margin_left = 30.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 47.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
 
 [node name="Ligne6" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 395.0
-margin_right = 539.0
-margin_bottom = 449.0
+margin_top = 585.0
+margin_right = 861.0
+margin_bottom = 677.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne6"]
-margin_right = 25.0
-margin_bottom = 54.0
+margin_right = 40.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "6"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne6"]
-margin_left = 29.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 44.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 1 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 1 missions du nouvel ordre kai)"
 
 [node name="Ligne7" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 474.0
-margin_right = 539.0
-margin_bottom = 528.0
+margin_top = 702.0
+margin_right = 861.0
+margin_bottom = 794.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne7"]
-margin_right = 24.0
-margin_bottom = 54.0
+margin_right = 38.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "7"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne7"]
-margin_left = 28.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 42.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 2 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 2 missions du nouvel ordre kai)"
 
 [node name="Ligne8" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 553.0
-margin_right = 539.0
-margin_bottom = 607.0
+margin_top = 819.0
+margin_right = 861.0
+margin_bottom = 911.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne8"]
-margin_right = 24.0
-margin_bottom = 54.0
+margin_right = 39.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "8"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne8"]
-margin_left = 28.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 43.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 3 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 3 missions du nouvel ordre kai)"
 
 [node name="Ligne9" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 632.0
-margin_right = 539.0
-margin_bottom = 686.0
+margin_top = 936.0
+margin_right = 861.0
+margin_bottom = 1028.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne9"]
-margin_right = 25.0
-margin_bottom = 54.0
+margin_right = 40.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "9"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne9"]
-margin_left = 29.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 44.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 4 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 4 missions du nouvel ordre kai)"
 
 [node name="Ligne10" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 711.0
-margin_right = 539.0
-margin_bottom = 765.0
+margin_top = 1053.0
+margin_right = 861.0
+margin_bottom = 1145.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne10"]
-margin_right = 35.0
-margin_bottom = 54.0
+margin_right = 57.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "10"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne10"]
-margin_left = 39.0
-margin_right = 539.0
-margin_bottom = 54.0
-rect_min_size = Vector2( 500, 0 )
+margin_left = 61.0
+margin_right = 861.0
+margin_bottom = 92.0
+rect_min_size = Vector2( 800, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 5 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 5 missions du nouvel ordre kai)"
 
 [node name="Ligne11" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 790.0
-margin_right = 539.0
-margin_bottom = 844.0
+margin_top = 1170.0
+margin_right = 861.0
+margin_bottom = 1262.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne11"]
-margin_right = 26.0
-margin_bottom = 54.0
+margin_right = 40.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "11"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne11"]
-margin_left = 30.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 44.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 6 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 6 missions du nouvel ordre kai)"
 
 [node name="Ligne12" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 869.0
-margin_right = 539.0
-margin_bottom = 923.0
+margin_top = 1287.0
+margin_right = 861.0
+margin_bottom = 1379.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne12"]
-margin_right = 35.0
-margin_bottom = 54.0
+margin_right = 58.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "12"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne12"]
-margin_left = 39.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 62.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 7 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 7 missions du nouvel ordre kai)"
 
 [node name="Ligne13" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 948.0
-margin_right = 539.0
-margin_bottom = 1002.0
+margin_top = 1404.0
+margin_right = 861.0
+margin_bottom = 1496.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne13"]
-margin_right = 36.0
-margin_bottom = 54.0
+margin_right = 59.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "13"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne13"]
-margin_left = 40.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 63.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 8 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 8 missions du nouvel ordre kai)"
 
 [node name="Ligne14" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 1027.0
-margin_right = 539.0
-margin_bottom = 1081.0
+margin_top = 1521.0
+margin_right = 861.0
+margin_bottom = 1613.0
 
 [node name="Id" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne14"]
-margin_right = 37.0
-margin_bottom = 54.0
+margin_right = 62.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 3 )
 text = "14"
 
 [node name="LineEdit" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Ligne14"]
-margin_left = 41.0
-margin_right = 539.0
-margin_bottom = 54.0
+margin_left = 66.0
+margin_right = 861.0
+margin_bottom = 92.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
 max_length = 300
-placeholder_text = "(si vous avez accomplis avec succès 9 missions du nouvel ordre kai)"
+placeholder_text = "(si vous avez fini 9 missions du nouvel ordre kai)"
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
 [connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]

@@ -7,22 +7,22 @@
 [ext_resource path="res://menu/BtPlus.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 35
+size = 60
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 100
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 30
+size = 60
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 25
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -57,10 +57,10 @@ __meta__ = {
 }
 
 [node name="Bt_Annuler" type="Button" parent="."]
-margin_left = 560.613
+margin_left = 847.613
 margin_top = 24.6132
-margin_right = 671.613
-margin_bottom = 79.6132
+margin_right = 1030.61
+margin_bottom = 100.613
 rect_min_size = Vector2( 100, 55 )
 custom_fonts/font = SubResource( 1 )
 text = "Annuler"
@@ -71,9 +71,9 @@ __meta__ = {
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 94.0
-margin_top = 187.0
-margin_right = -52.0
+margin_left = 67.0
+margin_top = 170.0
+margin_right = -32.0
 margin_bottom = -62.0
 follow_focus = true
 scroll_horizontal_enabled = false
@@ -82,25 +82,25 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
-margin_right = 550.0
-margin_bottom = 875.0
+margin_right = 954.0
+margin_bottom = 1687.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
-margin_right = 550.0
-margin_bottom = 875.0
-custom_constants/separation = 25
+margin_right = 954.0
+margin_bottom = 1687.0
+custom_constants/separation = 50
 
 [node name="ListeArme" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_right = 550.0
-margin_bottom = 161.0
+margin_right = 954.0
+margin_bottom = 283.0
 custom_constants/separation = 5
 
 [node name="TitreArmes" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/ListeArme"]
-margin_right = 550.0
-margin_bottom = 65.0
+margin_right = 954.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Liste des armes :"
 align = 1
@@ -110,31 +110,33 @@ __meta__ = {
 }
 
 [node name="Arme1" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/ListeArme"]
-margin_top = 70.0
-margin_right = 550.0
-margin_bottom = 113.0
+margin_top = 126.0
+margin_right = 954.0
+margin_bottom = 202.0
 rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
 max_length = 300
+placeholder_text = "arme 1"
 
 [node name="Arme2" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/ListeArme"]
-margin_top = 118.0
-margin_right = 550.0
-margin_bottom = 161.0
+margin_top = 207.0
+margin_right = 954.0
+margin_bottom = 283.0
 rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
 max_length = 300
+placeholder_text = "arme 2"
 
 [node name="Sciences_Armes" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 186.0
-margin_right = 550.0
-margin_bottom = 691.0
+margin_top = 333.0
+margin_right = 954.0
+margin_bottom = 1304.0
 
 [node name="TitreScience" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes"]
-margin_right = 550.0
-margin_bottom = 65.0
+margin_right = 954.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Sciences des armes :"
 align = 1
@@ -144,20 +146,20 @@ __meta__ = {
 }
 
 [node name="GridContainer" type="GridContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes"]
-margin_top = 69.0
-margin_right = 550.0
-margin_bottom = 505.0
+margin_top = 125.0
+margin_right = 954.0
+margin_bottom = 971.0
 custom_constants/hseparation = 50
 columns = 2
 
 [node name="Poignard" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_right = 250.0
-margin_bottom = 84.0
+margin_right = 470.0
+margin_bottom = 166.0
 alignment = 1
 
 [node name="TitrePoignard" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 470.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Poignard :"
 align = 1
@@ -166,37 +168,37 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 470.0
+margin_bottom = 166.0
 
 [node name="Poignard" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Poignard"
 
 [node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Poignard/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Poignard"
 
 [node name="Lance" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_left = 300.0
-margin_right = 550.0
-margin_bottom = 84.0
+margin_left = 520.0
+margin_right = 954.0
+margin_bottom = 166.0
 
 [node name="TitreLance" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 434.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Lance :"
 align = 1
@@ -205,37 +207,37 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 434.0
+margin_bottom = 166.0
 
 [node name="Lance" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Lance"
 
 [node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Lance/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Lance"
 
 [node name="MasseDarmes" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_top = 88.0
-margin_right = 250.0
-margin_bottom = 172.0
+margin_top = 170.0
+margin_right = 470.0
+margin_bottom = 336.0
 
 [node name="TitreMasse" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 470.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Masse d'arme :"
 align = 1
@@ -244,38 +246,38 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 470.0
+margin_bottom = 166.0
 
 [node name="Masse" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin3" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Masse"
 
 [node name="BtPlus3" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/MasseDarmes/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Masse"
 
 [node name="Sabre" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_left = 300.0
-margin_top = 88.0
-margin_right = 550.0
-margin_bottom = 172.0
+margin_left = 520.0
+margin_top = 170.0
+margin_right = 954.0
+margin_bottom = 336.0
 
 [node name="TitreSabre" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 434.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Sabre :"
 align = 1
@@ -284,37 +286,37 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 434.0
+margin_bottom = 166.0
 
 [node name="Sabre" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin4" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Sabre"
 
 [node name="BtPlus4" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Sabre/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Sabre"
 
 [node name="Marteau" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_top = 176.0
-margin_right = 250.0
-margin_bottom = 260.0
+margin_top = 340.0
+margin_right = 470.0
+margin_bottom = 506.0
 
 [node name="TitreMarteau" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 470.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Marteau de Guerre :"
 align = 1
@@ -323,38 +325,38 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 470.0
+margin_bottom = 166.0
 
 [node name="Marteau" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin5" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Marteau"
 
 [node name="BtPlus5" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Marteau/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Marteau"
 
 [node name="Arc" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_left = 300.0
-margin_top = 176.0
-margin_right = 550.0
-margin_bottom = 260.0
+margin_left = 520.0
+margin_top = 340.0
+margin_right = 954.0
+margin_bottom = 506.0
 
 [node name="TitreArc" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 434.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Arc :"
 align = 1
@@ -363,37 +365,37 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 434.0
+margin_bottom = 166.0
 
 [node name="Arc" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin6" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Arc"
 
 [node name="BtPlus6" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Arc/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Arc"
 
 [node name="Hache" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_top = 264.0
-margin_right = 250.0
-margin_bottom = 348.0
+margin_top = 510.0
+margin_right = 470.0
+margin_bottom = 676.0
 
 [node name="TitreHache" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 470.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Hache :"
 align = 1
@@ -402,38 +404,38 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 470.0
+margin_bottom = 166.0
 
 [node name="Hache" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin7" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Hache"
 
 [node name="BtPlus7" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Hache/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Hache"
 
 [node name="Epee" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_left = 300.0
-margin_top = 264.0
-margin_right = 550.0
-margin_bottom = 348.0
+margin_left = 520.0
+margin_top = 510.0
+margin_right = 954.0
+margin_bottom = 676.0
 
 [node name="TitreEpee" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 434.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Epée :"
 align = 1
@@ -442,37 +444,37 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 434.0
+margin_bottom = 166.0
 
 [node name="Epee" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin8" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Epee"
 
 [node name="BtPlus8" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Epee/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Epee"
 
 [node name="Baton" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_top = 352.0
-margin_right = 250.0
-margin_bottom = 436.0
+margin_top = 680.0
+margin_right = 470.0
+margin_bottom = 846.0
 
 [node name="TitreBaton" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 470.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Bâton :"
 align = 1
@@ -481,38 +483,38 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 470.0
+margin_bottom = 166.0
 
 [node name="Baton" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin9" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Baton"
 
 [node name="BtPlus9" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Baton/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Baton"
 
 [node name="Glaive" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer"]
-margin_left = 300.0
-margin_top = 352.0
-margin_right = 550.0
-margin_bottom = 436.0
+margin_left = 520.0
+margin_top = 680.0
+margin_right = 954.0
+margin_bottom = 846.0
 
 [node name="TitreGlaive" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive"]
-margin_right = 250.0
-margin_bottom = 37.0
+margin_right = 434.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Glaive :"
 align = 1
@@ -521,37 +523,38 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive"]
-margin_top = 41.0
-margin_right = 250.0
-margin_bottom = 84.0
+margin_top = 85.0
+margin_right = 434.0
+margin_bottom = 166.0
 
 [node name="Glaive" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive/HBoxContainer"]
-margin_right = 156.0
-margin_bottom = 43.0
+margin_right = 276.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
 
 [node name="BtMoin10" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_right = 203.0
-margin_bottom = 43.0
+margin_left = 280.0
+margin_right = 355.0
+margin_bottom = 81.0
 path_lineedit = "Glaive"
 
 [node name="BtPlus10" parent="ScrollContainer/CenterContainer/VBoxContainer/Sciences_Armes/GridContainer/Glaive/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 207.0
-margin_right = 250.0
-margin_bottom = 43.0
+margin_left = 359.0
+margin_right = 434.0
+margin_bottom = 81.0
 path_lineedit = "Glaive"
 
 [node name="CarquoisFleches" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 716.0
-margin_right = 550.0
-margin_bottom = 875.0
+margin_top = 1354.0
+margin_right = 954.0
+margin_bottom = 1687.0
+custom_constants/separation = 25
 
 [node name="TitreCarquois" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches"]
-margin_right = 550.0
-margin_bottom = 65.0
+margin_right = 954.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Carquois et flèches :"
 align = 1
@@ -561,14 +564,13 @@ __meta__ = {
 }
 
 [node name="Carquois" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches"]
-margin_top = 69.0
-margin_right = 550.0
-margin_bottom = 112.0
+margin_top = 146.0
+margin_right = 954.0
+margin_bottom = 227.0
 
 [node name="TitreCarquois" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/Carquois"]
-margin_top = 3.0
-margin_right = 95.0
-margin_bottom = 40.0
+margin_right = 238.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Carquois :"
 align = 1
@@ -577,9 +579,9 @@ __meta__ = {
 }
 
 [node name="Carquois" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/Carquois"]
-margin_left = 99.0
-margin_right = 255.0
-margin_bottom = 43.0
+margin_left = 242.0
+margin_right = 518.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "oui / non"
@@ -588,14 +590,13 @@ __meta__ = {
 }
 
 [node name="NombreFleches" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches"]
-margin_top = 116.0
-margin_right = 550.0
-margin_bottom = 159.0
+margin_top = 252.0
+margin_right = 954.0
+margin_bottom = 333.0
 
 [node name="TitreNombreFleches" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/NombreFleches"]
-margin_top = 3.0
-margin_right = 194.0
-margin_bottom = 40.0
+margin_right = 494.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 4 )
 text = "Nombres de Flèches : "
 align = 1
@@ -604,9 +605,9 @@ __meta__ = {
 }
 
 [node name="NombreFleches" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/NombreFleches"]
-margin_left = 198.0
-margin_right = 354.0
-margin_bottom = 43.0
+margin_left = 498.0
+margin_right = 774.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "0"
@@ -615,15 +616,15 @@ __meta__ = {
 }
 
 [node name="BtMoin11" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/NombreFleches" instance=ExtResource( 4 )]
-margin_left = 358.0
-margin_right = 401.0
-margin_bottom = 43.0
+margin_left = 778.0
+margin_right = 853.0
+margin_bottom = 81.0
 path_lineedit = "NombreFleches"
 
 [node name="BtPlus11" parent="ScrollContainer/CenterContainer/VBoxContainer/CarquoisFleches/NombreFleches" instance=ExtResource( 5 )]
-margin_left = 405.0
-margin_right = 448.0
-margin_bottom = 43.0
+margin_left = 857.0
+margin_right = 932.0
+margin_bottom = 81.0
 path_lineedit = "NombreFleches"
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
 [connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]

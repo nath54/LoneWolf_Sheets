@@ -27,10 +27,12 @@ Session="*res://global/Session.gd"
 
 [display]
 
-window/size/width=720
-window/size/height=1440
+window/size/width=1080
+window/size/height=2160
 window/energy_saving/keep_screen_on=false
 window/handheld/orientation="sensor_portrait"
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [gui]
 

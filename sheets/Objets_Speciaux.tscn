@@ -5,32 +5,32 @@
 [ext_resource path="res://sheets/Objets_Speciaux.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 35
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 100
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 35
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 24
+size = 50
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 35
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 30
+size = 50
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -65,10 +65,10 @@ __meta__ = {
 }
 
 [node name="Bt_Annuler" type="Button" parent="."]
-margin_left = 552.613
+margin_left = 824.613
 margin_top = 24.6132
-margin_right = 652.613
-margin_bottom = 79.6132
+margin_right = 1024.61
+margin_bottom = 105.613
 rect_min_size = Vector2( 100, 55 )
 custom_fonts/font = SubResource( 1 )
 text = "Annuler"
@@ -90,26 +90,26 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
-margin_right = 508.0
-margin_bottom = 872.0
+margin_right = 876.0
+margin_bottom = 1382.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
-margin_right = 508.0
-margin_bottom = 872.0
+margin_right = 876.0
+margin_bottom = 1382.0
 size_flags_horizontal = 3
 custom_constants/separation = 50
 
 [node name="ObjetsSpeciaux" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_right = 508.0
-margin_bottom = 442.0
+margin_right = 876.0
+margin_bottom = 731.0
 custom_constants/separation = 25
 
 [node name="TitreObjetsSpeciaux" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux"]
-margin_right = 508.0
-margin_bottom = 65.0
+margin_right = 876.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Objets Spéciaux : "
 align = 1
@@ -119,21 +119,21 @@ __meta__ = {
 }
 
 [node name="VarsObjs" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux"]
-margin_top = 90.0
-margin_right = 508.0
-margin_bottom = 442.0
+margin_top = 146.0
+margin_right = 876.0
+margin_bottom = 731.0
 size_flags_horizontal = 3
 custom_constants/separation = 50
 alignment = 1
 
 [node name="Descriptions" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux/VarsObjs"]
-margin_left = 29.0
-margin_right = 229.0
-margin_bottom = 352.0
+margin_left = 13.0
+margin_right = 413.0
+margin_bottom = 585.0
 
 [node name="TitreDescriptions" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux/VarsObjs/Descriptions"]
-margin_right = 200.0
-margin_bottom = 48.0
+margin_right = 400.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 text = "Description :"
 align = 1
@@ -143,21 +143,21 @@ __meta__ = {
 }
 
 [node name="Descriptions" type="TextEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux/VarsObjs/Descriptions"]
-margin_top = 52.0
-margin_right = 200.0
-margin_bottom = 352.0
-rect_min_size = Vector2( 200, 300 )
+margin_top = 85.0
+margin_right = 400.0
+margin_bottom = 585.0
+rect_min_size = Vector2( 400, 500 )
 custom_fonts/font = SubResource( 4 )
 show_line_numbers = true
 
 [node name="Effets" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux/VarsObjs"]
-margin_left = 279.0
-margin_right = 479.0
-margin_bottom = 352.0
+margin_left = 463.0
+margin_right = 863.0
+margin_bottom = 585.0
 
 [node name="TitreEffets" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux/VarsObjs/Effets"]
-margin_right = 200.0
-margin_bottom = 48.0
+margin_right = 400.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 3 )
 text = "Effets :"
 align = 1
@@ -167,22 +167,22 @@ __meta__ = {
 }
 
 [node name="Effets" type="TextEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/ObjetsSpeciaux/VarsObjs/Effets"]
-margin_top = 52.0
-margin_right = 200.0
-margin_bottom = 352.0
-rect_min_size = Vector2( 200, 300 )
+margin_top = 85.0
+margin_right = 400.0
+margin_bottom = 585.0
+rect_min_size = Vector2( 400, 500 )
 custom_fonts/font = SubResource( 4 )
 show_line_numbers = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 492.0
-margin_right = 508.0
-margin_bottom = 872.0
+margin_top = 781.0
+margin_right = 876.0
+margin_bottom = 1382.0
 custom_constants/separation = 15
 
 [node name="TitreArme" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer"]
-margin_right = 508.0
-margin_bottom = 65.0
+margin_right = 876.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Arme Kaï :"
 align = 1
@@ -192,13 +192,13 @@ __meta__ = {
 }
 
 [node name="Nom" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer"]
-margin_top = 80.0
-margin_right = 508.0
-margin_bottom = 128.0
+margin_top = 136.0
+margin_right = 876.0
+margin_bottom = 217.0
 
 [node name="TitreNom" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Nom"]
-margin_right = 78.0
-margin_bottom = 48.0
+margin_right = 138.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 5 )
 text = "Nom :"
 align = 1
@@ -207,9 +207,9 @@ __meta__ = {
 }
 
 [node name="NomArme" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Nom"]
-margin_left = 82.0
-margin_right = 508.0
-margin_bottom = 48.0
+margin_left = 142.0
+margin_right = 876.0
+margin_bottom = 81.0
 rect_min_size = Vector2( 250, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 6 )
@@ -217,13 +217,13 @@ max_length = 300
 placeholder_text = "Nom de l'arme"
 
 [node name="Type" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer"]
-margin_top = 143.0
-margin_right = 508.0
-margin_bottom = 191.0
+margin_top = 232.0
+margin_right = 876.0
+margin_bottom = 313.0
 
 [node name="TitreType" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Type"]
-margin_right = 80.0
-margin_bottom = 48.0
+margin_right = 141.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 5 )
 text = "Type :"
 align = 1
@@ -232,9 +232,9 @@ __meta__ = {
 }
 
 [node name="TypeArme" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Type"]
-margin_left = 84.0
-margin_right = 508.0
-margin_bottom = 48.0
+margin_left = 145.0
+margin_right = 876.0
+margin_bottom = 81.0
 rect_min_size = Vector2( 250, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 6 )
@@ -242,13 +242,13 @@ max_length = 300
 placeholder_text = "Type de l'arme"
 
 [node name="BonusHabilType" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer"]
-margin_top = 206.0
-margin_right = 508.0
-margin_bottom = 254.0
+margin_top = 328.0
+margin_right = 876.0
+margin_bottom = 409.0
 
 [node name="TitreBonusType" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/BonusHabilType"]
-margin_right = 204.0
-margin_bottom = 48.0
+margin_right = 372.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 5 )
 text = "Bonus Habileté :"
 align = 1
@@ -257,23 +257,23 @@ __meta__ = {
 }
 
 [node name="BonusType" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/BonusHabilType"]
-margin_left = 208.0
-margin_right = 508.0
-margin_bottom = 48.0
-rect_min_size = Vector2( 300, 0 )
+margin_left = 376.0
+margin_right = 876.0
+margin_bottom = 81.0
+rect_min_size = Vector2( 500, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 6 )
 max_length = 300
 placeholder_text = "Bonus du au type de l'arme"
 
 [node name="Propriete" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer"]
-margin_top = 269.0
-margin_right = 508.0
-margin_bottom = 317.0
+margin_top = 424.0
+margin_right = 876.0
+margin_bottom = 505.0
 
 [node name="TitrePropriete" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Propriete"]
-margin_right = 136.0
-margin_bottom = 48.0
+margin_right = 245.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 5 )
 text = "Propriété :"
 align = 1
@@ -282,9 +282,9 @@ __meta__ = {
 }
 
 [node name="ProprieteArme" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/Propriete"]
-margin_left = 140.0
-margin_right = 508.0
-margin_bottom = 48.0
+margin_left = 249.0
+margin_right = 876.0
+margin_bottom = 81.0
 rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 6 )
@@ -292,13 +292,13 @@ max_length = 300
 placeholder_text = "Propriété de l'arme"
 
 [node name="BonusHabilProp" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer"]
-margin_top = 332.0
-margin_right = 508.0
-margin_bottom = 380.0
+margin_top = 520.0
+margin_right = 876.0
+margin_bottom = 601.0
 
 [node name="TitreBonusProp" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/BonusHabilProp"]
-margin_right = 204.0
-margin_bottom = 48.0
+margin_right = 372.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 5 )
 text = "Bonus Habileté :"
 align = 1
@@ -307,13 +307,13 @@ __meta__ = {
 }
 
 [node name="BonusProp" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/VBoxContainer/BonusHabilProp"]
-margin_left = 208.0
-margin_right = 508.0
-margin_bottom = 48.0
+margin_left = 376.0
+margin_right = 876.0
+margin_bottom = 81.0
 rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 6 )
 max_length = 300
-placeholder_text = "Bonus du à la propriété de l'arme"
+placeholder_text = "Bonus de la propriété de l'arme"
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
 [connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]

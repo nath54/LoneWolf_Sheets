@@ -22,11 +22,16 @@ func _ready():
 
 func load_sessions_names() -> void:
 	var files: Array = list_files_in_directory("user://")
+	var nb: int = 0
 	for f in files:
+		var n: String = f.split(".")[0]
 		var bt_s: Button = $CenterContainer/VBoxContainer/BtNew.duplicate()
-		bt_s.text = f
+		bt_s.text = n
 		bt_s.connect("pressed", self, "_on_bt_pressed", [f])
 		$CenterContainer/VBoxContainer/Sessions.add_child(bt_s)
+		nb += 1
+	if nb == 0:
+		$CenterContainer/VBoxContainer/NoSession.visible = true
 	#
 	$CenterContainer/VBoxContainer/BtNew.connect("pressed", self, "_on_bt_pressed", ["BtNew"])
 
@@ -39,3 +44,5 @@ func _on_bt_pressed(bt_name: String) -> void:
 		get_tree().change_scene("res://menu/Menu.tscn")
 
 
+func _on_BtQuit_pressed():
+	get_tree().quit()

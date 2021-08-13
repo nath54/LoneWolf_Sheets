@@ -7,17 +7,17 @@
 [ext_resource path="res://menu/BtPlus.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 35
+size = 60
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 100
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 35
+size = 60
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -33,12 +33,12 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 1
 
 [sub_resource type="DynamicFont" id=5]
-size = 50
+size = 70
 use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 25
+size = 65
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -73,10 +73,10 @@ __meta__ = {
 }
 
 [node name="Bt_Annuler" type="Button" parent="."]
-margin_left = 552.613
+margin_left = 840.613
 margin_top = 24.6132
-margin_right = 663.613
-margin_bottom = 79.6132
+margin_right = 1023.61
+margin_bottom = 100.613
 rect_min_size = Vector2( 100, 55 )
 custom_fonts/font = SubResource( 1 )
 text = "Annuler"
@@ -89,7 +89,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 94.0
 margin_top = 187.0
-margin_right = -52.0
+margin_right = -104.0
 margin_bottom = -62.0
 follow_focus = true
 scroll_horizontal_enabled = false
@@ -98,26 +98,26 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
-margin_right = 584.0
-margin_bottom = 604.0
+margin_right = 940.0
+margin_bottom = 844.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
-margin_right = 584.0
-margin_bottom = 604.0
+margin_right = 940.0
+margin_bottom = 844.0
 size_flags_horizontal = 3
 custom_constants/separation = 50
 
 [node name="Stats" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_right = 584.0
-margin_bottom = 222.0
+margin_right = 940.0
+margin_bottom = 312.0
 custom_constants/separation = 25
 
 [node name="TitreStats" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats"]
-margin_right = 584.0
-margin_bottom = 65.0
+margin_right = 940.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Stats :"
 align = 1
@@ -127,23 +127,23 @@ __meta__ = {
 }
 
 [node name="Stats_Vars" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats"]
-margin_top = 90.0
-margin_right = 584.0
-margin_bottom = 222.0
+margin_top = 146.0
+margin_right = 940.0
+margin_bottom = 312.0
 size_flags_horizontal = 3
-custom_constants/separation = 50
+custom_constants/separation = 150
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars"]
-margin_right = 267.0
-margin_bottom = 132.0
+margin_right = 395.0
+margin_bottom = 166.0
 
 [node name="Habilete" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer"]
-margin_right = 220.0
-margin_bottom = 132.0
+margin_right = 316.0
+margin_bottom = 166.0
 
 [node name="TitreHabilete" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/Habilete"]
-margin_right = 220.0
-margin_bottom = 48.0
+margin_right = 316.0
+margin_bottom = 76.0
 custom_fonts/font = SubResource( 3 )
 text = "Habileté"
 align = 1
@@ -153,9 +153,9 @@ __meta__ = {
 }
 
 [node name="Habilete" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/Habilete"]
-margin_top = 52.0
-margin_right = 220.0
-margin_bottom = 132.0
+margin_top = 80.0
+margin_right = 316.0
+margin_bottom = 163.0
 rect_min_size = Vector2( 80, 80 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 5 )
@@ -164,35 +164,34 @@ align = 1
 max_length = 20
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer"]
-margin_left = 224.0
-margin_right = 267.0
-margin_bottom = 132.0
+margin_left = 320.0
+margin_right = 395.0
+margin_bottom = 166.0
 alignment = 2
 
 [node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/VBoxContainer" instance=ExtResource( 4 )]
-margin_top = 42.0
-margin_right = 43.0
-margin_bottom = 85.0
+margin_right = 75.0
+margin_bottom = 81.0
 path_lineedit = "../Habilete/Habilete"
 
 [node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/VBoxContainer" instance=ExtResource( 5 )]
-margin_top = 89.0
-margin_right = 43.0
-margin_bottom = 132.0
+margin_top = 85.0
+margin_right = 75.0
+margin_bottom = 166.0
 path_lineedit = "../Habilete/Habilete"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars"]
-margin_left = 317.0
-margin_right = 584.0
-margin_bottom = 132.0
+margin_left = 545.0
+margin_right = 940.0
+margin_bottom = 166.0
 
 [node name="Endurance" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2"]
-margin_right = 220.0
-margin_bottom = 132.0
+margin_right = 316.0
+margin_bottom = 166.0
 
 [node name="TitreEndurance" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/Endurance"]
-margin_right = 220.0
-margin_bottom = 48.0
+margin_right = 316.0
+margin_bottom = 76.0
 custom_fonts/font = SubResource( 3 )
 text = "Endurance"
 align = 1
@@ -202,9 +201,9 @@ __meta__ = {
 }
 
 [node name="Endurance" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/Endurance"]
-margin_top = 52.0
-margin_right = 220.0
-margin_bottom = 132.0
+margin_top = 80.0
+margin_right = 316.0
+margin_bottom = 163.0
 rect_min_size = Vector2( 80, 80 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 5 )
@@ -213,32 +212,31 @@ align = 1
 max_length = 20
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2"]
-margin_left = 224.0
-margin_right = 267.0
-margin_bottom = 132.0
+margin_left = 320.0
+margin_right = 395.0
+margin_bottom = 166.0
 alignment = 2
 
 [node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/VBoxContainer2" instance=ExtResource( 4 )]
-margin_top = 42.0
-margin_right = 43.0
-margin_bottom = 85.0
+margin_right = 75.0
+margin_bottom = 81.0
 path_lineedit = "../Endurance/Endurance"
 
 [node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/VBoxContainer2" instance=ExtResource( 5 )]
-margin_top = 89.0
-margin_right = 43.0
-margin_bottom = 132.0
+margin_top = 85.0
+margin_right = 75.0
+margin_bottom = 166.0
 path_lineedit = "../Endurance/Endurance"
 
 [node name="Combat" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_top = 272.0
-margin_right = 584.0
-margin_bottom = 604.0
+margin_top = 362.0
+margin_right = 940.0
+margin_bottom = 844.0
 custom_constants/separation = 25
 
 [node name="TitreCombat" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat"]
-margin_right = 584.0
-margin_bottom = 65.0
+margin_right = 940.0
+margin_bottom = 121.0
 custom_fonts/font = SubResource( 2 )
 text = "Combat :"
 align = 1
@@ -248,21 +246,21 @@ __meta__ = {
 }
 
 [node name="Stats_Vars" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat"]
-margin_top = 90.0
-margin_right = 584.0
-margin_bottom = 332.0
+margin_top = 146.0
+margin_right = 940.0
+margin_bottom = 482.0
 size_flags_horizontal = 3
 custom_constants/separation = 0
 alignment = 1
 
 [node name="EnduMaitre" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars"]
-margin_left = 49.0
-margin_right = 229.0
-margin_bottom = 242.0
+margin_left = 29.0
+margin_right = 327.0
+margin_bottom = 336.0
 
 [node name="Titre" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre"]
-margin_right = 180.0
-margin_bottom = 91.0
+margin_right = 298.0
+margin_bottom = 147.0
 custom_fonts/font = SubResource( 3 )
 text = "Grand Maitre
 "
@@ -273,9 +271,9 @@ __meta__ = {
 }
 
 [node name="Endu_GrandMaitre" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre"]
-margin_top = 95.0
-margin_right = 180.0
-margin_bottom = 195.0
+margin_top = 151.0
+margin_right = 298.0
+margin_bottom = 251.0
 rect_min_size = Vector2( 0, 100 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 6 )
@@ -285,31 +283,31 @@ max_length = 20
 placeholder_text = "0"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre"]
-margin_top = 199.0
-margin_right = 180.0
-margin_bottom = 242.0
+margin_top = 255.0
+margin_right = 298.0
+margin_bottom = 336.0
 alignment = 1
 
 [node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre/HBoxContainer" instance=ExtResource( 4 )]
-margin_left = 45.0
-margin_right = 88.0
-margin_bottom = 43.0
+margin_left = 72.0
+margin_right = 147.0
+margin_bottom = 81.0
 path_lineedit = "../Endu_GrandMaitre"
 
 [node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre/HBoxContainer" instance=ExtResource( 5 )]
-margin_left = 92.0
-margin_right = 135.0
-margin_bottom = 43.0
+margin_left = 151.0
+margin_right = 226.0
+margin_bottom = 81.0
 path_lineedit = "../Endu_GrandMaitre"
 
 [node name="QuotAtt" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars"]
-margin_left = 229.0
-margin_right = 363.0
-margin_bottom = 242.0
+margin_left = 327.0
+margin_right = 619.0
+margin_bottom = 336.0
 
 [node name="Titre" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt"]
-margin_right = 134.0
-margin_bottom = 91.0
+margin_right = 292.0
+margin_bottom = 147.0
 custom_fonts/font = SubResource( 3 )
 text = "Quotient
 d'Attaque"
@@ -320,9 +318,9 @@ __meta__ = {
 }
 
 [node name="QuotAtt" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt"]
-margin_top = 95.0
-margin_right = 134.0
-margin_bottom = 195.0
+margin_top = 151.0
+margin_right = 292.0
+margin_bottom = 251.0
 rect_min_size = Vector2( 0, 100 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 6 )
@@ -332,31 +330,31 @@ max_length = 20
 placeholder_text = "0"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt"]
-margin_top = 199.0
-margin_right = 134.0
-margin_bottom = 242.0
+margin_top = 255.0
+margin_right = 292.0
+margin_bottom = 336.0
 alignment = 1
 
 [node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt/HBoxContainer2" instance=ExtResource( 4 )]
-margin_left = 22.0
-margin_right = 65.0
-margin_bottom = 43.0
+margin_left = 69.0
+margin_right = 144.0
+margin_bottom = 81.0
 path_lineedit = "../QuotAtt"
 
 [node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt/HBoxContainer2" instance=ExtResource( 5 )]
-margin_left = 69.0
-margin_right = 112.0
-margin_bottom = 43.0
+margin_left = 148.0
+margin_right = 223.0
+margin_bottom = 81.0
 path_lineedit = "../QuotAtt"
 
 [node name="EnduEnemi" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars"]
-margin_left = 363.0
-margin_right = 535.0
-margin_bottom = 242.0
+margin_left = 619.0
+margin_right = 911.0
+margin_bottom = 336.0
 
 [node name="TitreEnduEnnemi" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi"]
-margin_right = 172.0
-margin_bottom = 91.0
+margin_right = 292.0
+margin_bottom = 147.0
 custom_fonts/font = SubResource( 3 )
 text = "Ennemi          
 "
@@ -367,9 +365,9 @@ __meta__ = {
 }
 
 [node name="EnduEnnemi" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi"]
-margin_top = 95.0
-margin_right = 172.0
-margin_bottom = 195.0
+margin_top = 151.0
+margin_right = 292.0
+margin_bottom = 251.0
 rect_min_size = Vector2( 0, 100 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 6 )
@@ -379,21 +377,21 @@ max_length = 20
 placeholder_text = "0"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi"]
-margin_top = 199.0
-margin_right = 172.0
-margin_bottom = 242.0
+margin_top = 255.0
+margin_right = 292.0
+margin_bottom = 336.0
 alignment = 1
 
 [node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi/HBoxContainer3" instance=ExtResource( 4 )]
-margin_left = 41.0
-margin_right = 84.0
-margin_bottom = 43.0
+margin_left = 69.0
+margin_right = 144.0
+margin_bottom = 81.0
 path_lineedit = "../EnduEnnemi"
 
 [node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi/HBoxContainer3" instance=ExtResource( 5 )]
-margin_left = 88.0
-margin_right = 131.0
-margin_bottom = 43.0
+margin_left = 148.0
+margin_right = 223.0
+margin_bottom = 81.0
 path_lineedit = "../EnduEnnemi"
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
 [connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]
