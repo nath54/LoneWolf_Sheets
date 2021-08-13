@@ -8,8 +8,6 @@ Ceci est un outil pour pouvoir jouer aux livres dont vous êtes le héros, de la
 
 **J'ai fait cette application en me basant sur la feuille d'aventure du livre "Loup Solitaire: Au bord de l'abîme", il se peut que certains autres chapitres aient une feuille d'aventure un peu différente, dans ce cas là, vous pouvez me demander de rajouter d'autres pages dans les issues du projet de github**
 
-Aussi, j'ai designé rapidement cette app pour qu'elle fonctionne bien sur téléphone en mode portrait, si vous l'utilisez sur ordinateur, il est recommandé de la laisser en mode portrait et de ne pas l'étendre sur tout l'ecran (pour l'instant). Pour que cela fonctionne bien, il faut encore que j'étudie les scrolls container de godot et comment bien les intégrer dans des center container.
-
 
 ## Fonctionnalités
 
@@ -24,7 +22,7 @@ Aussi, j'ai designé rapidement cette app pour qu'elle fonctionne bien sur tél�
 ## Todo
 
  - Rajouter les guides pour les divers objets et compétences du jeu
- - Améliorer l'affichage sur pc et certains téléphones/tablettes
+ - Ajouter des traductions vers d'autres langues (ex: anglais, espagnol, chinois, ...)
 
 ## Téléchargement
 
