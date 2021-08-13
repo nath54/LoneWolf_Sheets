@@ -1,6 +1,6 @@
 extends Control
 
-onready var page: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Page/Page
+onready var page: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer/Page
 onready var notes: TextEdit = $ScrollContainer/CenterContainer/VBoxContainer/Notes/Notes
 
 # Called when the node enters the scene tree for the first time.

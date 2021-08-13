@@ -10,6 +10,8 @@ func is_int(txt: String) -> bool:
 	var c: String
 	for x in range(len(txt)):
 		c = txt[x]
+		if x == 0 and c == "-":
+			continue
 		if not c in numbers:
 			return false
 	return true

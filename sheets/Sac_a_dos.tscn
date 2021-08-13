@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://res/fonts/kingthings-petrock/Kingthings Petrock.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://res/imgs/old_sheet_1.jpg" type="Texture" id=2]
 [ext_resource path="res://sheets/Sac_a_dos.gd" type="Script" id=3]
+[ext_resource path="res://menu/BtMoin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://menu/BtPlus.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -215,12 +217,24 @@ __meta__ = {
 
 [node name="Bourse" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Bourse"]
 margin_left = 159.0
-margin_right = 500.0
+margin_right = 406.0
 margin_bottom = 65.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
 max_length = 20
 placeholder_text = "0"
+
+[node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Bourse" instance=ExtResource( 4 )]
+margin_left = 410.0
+margin_right = 453.0
+margin_bottom = 65.0
+path_lineedit = "Bourse"
+
+[node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Bourse" instance=ExtResource( 5 )]
+margin_left = 457.0
+margin_right = 500.0
+margin_bottom = 65.0
+path_lineedit = "Bourse"
 
 [node name="Repas" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 margin_top = 860.0

@@ -152,7 +152,7 @@ margin_top = 1212.0
 margin_right = 654.0
 margin_bottom = 1260.0
 custom_fonts/font = SubResource( 1 )
-text = "Version 0.9"
+text = "Version 1.0"
 align = 1
 valign = 1
 

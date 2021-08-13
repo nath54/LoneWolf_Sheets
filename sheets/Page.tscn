@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://res/fonts/kingthings-petrock/Kingthings Petrock.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://res/imgs/old_sheet_1.jpg" type="Texture" id=2]
 [ext_resource path="res://sheets/Page.gd" type="Script" id=3]
+[ext_resource path="res://menu/BtMoin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://menu/BtPlus.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -14,12 +16,12 @@ size = 50
 use_filter = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=9]
+[sub_resource type="DynamicFont" id=3]
 size = 30
 use_filter = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=4]
 size = 24
 use_filter = true
 font_data = ExtResource( 1 )
@@ -108,15 +110,31 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Page" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Page"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Page"]
 margin_top = 80.0
 margin_right = 500.0
 margin_bottom = 123.0
+
+[node name="Page" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer"]
+margin_right = 406.0
+margin_bottom = 43.0
 rect_min_size = Vector2( 250, 0 )
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 9 )
+custom_fonts/font = SubResource( 3 )
 max_length = 300
 placeholder_text = "La page du livre où vous en êtes"
+
+[node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer" instance=ExtResource( 4 )]
+margin_left = 410.0
+margin_right = 453.0
+margin_bottom = 43.0
+path_lineedit = "Page"
+
+[node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Page/HBoxContainer" instance=ExtResource( 5 )]
+margin_left = 457.0
+margin_right = 500.0
+margin_bottom = 43.0
+path_lineedit = "Page"
 
 [node name="Notes" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 margin_top = 173.0
@@ -140,7 +158,7 @@ margin_top = 90.0
 margin_right = 500.0
 margin_bottom = 890.0
 rect_min_size = Vector2( 500, 800 )
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
 show_line_numbers = true
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
 [connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]

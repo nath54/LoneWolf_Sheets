@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://res/fonts/kingthings-petrock/Kingthings Petrock.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://sheets/Combats.gd" type="Script" id=2]
 [ext_resource path="res://res/imgs/old_sheet_1.jpg" type="Texture" id=3]
+[ext_resource path="res://menu/BtMoin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://menu/BtPlus.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -96,25 +98,25 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
-margin_right = 490.0
-margin_bottom = 557.0
+margin_right = 584.0
+margin_bottom = 604.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer"]
-margin_right = 490.0
-margin_bottom = 557.0
+margin_right = 584.0
+margin_bottom = 604.0
 size_flags_horizontal = 3
 custom_constants/separation = 50
 
 [node name="Stats" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
-margin_right = 490.0
+margin_right = 584.0
 margin_bottom = 222.0
 custom_constants/separation = 25
 
 [node name="TitreStats" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats"]
-margin_right = 490.0
+margin_right = 584.0
 margin_bottom = 65.0
 custom_fonts/font = SubResource( 2 )
 text = "Stats :"
@@ -126,17 +128,20 @@ __meta__ = {
 
 [node name="Stats_Vars" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats"]
 margin_top = 90.0
-margin_right = 490.0
+margin_right = 584.0
 margin_bottom = 222.0
 size_flags_horizontal = 3
 custom_constants/separation = 50
-alignment = 1
 
-[node name="Habilete" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars"]
+margin_right = 267.0
+margin_bottom = 132.0
+
+[node name="Habilete" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer"]
 margin_right = 220.0
 margin_bottom = 132.0
 
-[node name="TitreHabilete" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/Habilete"]
+[node name="TitreHabilete" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/Habilete"]
 margin_right = 220.0
 margin_bottom = 48.0
 custom_fonts/font = SubResource( 3 )
@@ -147,23 +152,45 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Habilete" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/Habilete"]
+[node name="Habilete" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/Habilete"]
 margin_top = 52.0
 margin_right = 220.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 150, 80 )
+rect_min_size = Vector2( 80, 80 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 5 )
 text = "0"
 align = 1
 max_length = 20
 
-[node name="Endurance" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars"]
-margin_left = 270.0
-margin_right = 490.0
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer"]
+margin_left = 224.0
+margin_right = 267.0
+margin_bottom = 132.0
+alignment = 2
+
+[node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/VBoxContainer" instance=ExtResource( 4 )]
+margin_top = 42.0
+margin_right = 43.0
+margin_bottom = 85.0
+path_lineedit = "../Habilete/Habilete"
+
+[node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/VBoxContainer" instance=ExtResource( 5 )]
+margin_top = 89.0
+margin_right = 43.0
+margin_bottom = 132.0
+path_lineedit = "../Habilete/Habilete"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars"]
+margin_left = 317.0
+margin_right = 584.0
 margin_bottom = 132.0
 
-[node name="TitreEndurance" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/Endurance"]
+[node name="Endurance" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2"]
+margin_right = 220.0
+margin_bottom = 132.0
+
+[node name="TitreEndurance" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/Endurance"]
 margin_right = 220.0
 margin_bottom = 48.0
 custom_fonts/font = SubResource( 3 )
@@ -174,25 +201,43 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Endurance" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/Endurance"]
+[node name="Endurance" type="LineEdit" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/Endurance"]
 margin_top = 52.0
 margin_right = 220.0
 margin_bottom = 132.0
-rect_min_size = Vector2( 150, 80 )
+rect_min_size = Vector2( 80, 80 )
 custom_styles/normal = SubResource( 4 )
 custom_fonts/font = SubResource( 5 )
 text = "0"
 align = 1
 max_length = 20
 
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2"]
+margin_left = 224.0
+margin_right = 267.0
+margin_bottom = 132.0
+alignment = 2
+
+[node name="BtMoin" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/VBoxContainer2" instance=ExtResource( 4 )]
+margin_top = 42.0
+margin_right = 43.0
+margin_bottom = 85.0
+path_lineedit = "../Endurance/Endurance"
+
+[node name="BtPlus" parent="ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/VBoxContainer2" instance=ExtResource( 5 )]
+margin_top = 89.0
+margin_right = 43.0
+margin_bottom = 132.0
+path_lineedit = "../Endurance/Endurance"
+
 [node name="Combat" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer"]
 margin_top = 272.0
-margin_right = 490.0
-margin_bottom = 557.0
+margin_right = 584.0
+margin_bottom = 604.0
 custom_constants/separation = 25
 
 [node name="TitreCombat" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat"]
-margin_right = 490.0
+margin_right = 584.0
 margin_bottom = 65.0
 custom_fonts/font = SubResource( 2 )
 text = "Combat :"
@@ -204,16 +249,16 @@ __meta__ = {
 
 [node name="Stats_Vars" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat"]
 margin_top = 90.0
-margin_right = 490.0
-margin_bottom = 285.0
+margin_right = 584.0
+margin_bottom = 332.0
 size_flags_horizontal = 3
 custom_constants/separation = 0
 alignment = 1
 
 [node name="EnduMaitre" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars"]
-margin_left = 2.0
-margin_right = 182.0
-margin_bottom = 195.0
+margin_left = 49.0
+margin_right = 229.0
+margin_bottom = 242.0
 
 [node name="Titre" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre"]
 margin_right = 180.0
@@ -237,11 +282,30 @@ custom_fonts/font = SubResource( 6 )
 text = "0"
 align = 1
 max_length = 20
+placeholder_text = "0"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre"]
+margin_top = 199.0
+margin_right = 180.0
+margin_bottom = 242.0
+alignment = 1
+
+[node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre/HBoxContainer" instance=ExtResource( 4 )]
+margin_left = 45.0
+margin_right = 88.0
+margin_bottom = 43.0
+path_lineedit = "../Endu_GrandMaitre"
+
+[node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre/HBoxContainer" instance=ExtResource( 5 )]
+margin_left = 92.0
+margin_right = 135.0
+margin_bottom = 43.0
+path_lineedit = "../Endu_GrandMaitre"
 
 [node name="QuotAtt" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars"]
-margin_left = 182.0
-margin_right = 316.0
-margin_bottom = 195.0
+margin_left = 229.0
+margin_right = 363.0
+margin_bottom = 242.0
 
 [node name="Titre" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt"]
 margin_right = 134.0
@@ -265,11 +329,30 @@ custom_fonts/font = SubResource( 6 )
 text = "0"
 align = 1
 max_length = 20
+placeholder_text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt"]
+margin_top = 199.0
+margin_right = 134.0
+margin_bottom = 242.0
+alignment = 1
+
+[node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt/HBoxContainer2" instance=ExtResource( 4 )]
+margin_left = 22.0
+margin_right = 65.0
+margin_bottom = 43.0
+path_lineedit = "../QuotAtt"
+
+[node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt/HBoxContainer2" instance=ExtResource( 5 )]
+margin_left = 69.0
+margin_right = 112.0
+margin_bottom = 43.0
+path_lineedit = "../QuotAtt"
 
 [node name="EnduEnemi" type="VBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars"]
-margin_left = 316.0
-margin_right = 488.0
-margin_bottom = 195.0
+margin_left = 363.0
+margin_right = 535.0
+margin_bottom = 242.0
 
 [node name="TitreEnduEnnemi" type="Label" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi"]
 margin_right = 172.0
@@ -293,5 +376,24 @@ custom_fonts/font = SubResource( 6 )
 text = "0"
 align = 1
 max_length = 20
+placeholder_text = "0"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi"]
+margin_top = 199.0
+margin_right = 172.0
+margin_bottom = 242.0
+alignment = 1
+
+[node name="BtMoin2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi/HBoxContainer3" instance=ExtResource( 4 )]
+margin_left = 41.0
+margin_right = 84.0
+margin_bottom = 43.0
+path_lineedit = "../EnduEnnemi"
+
+[node name="BtPlus2" parent="ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduEnemi/HBoxContainer3" instance=ExtResource( 5 )]
+margin_left = 88.0
+margin_right = 131.0
+margin_bottom = 43.0
+path_lineedit = "../EnduEnnemi"
 [connection signal="pressed" from="Bt_Menu" to="." method="_on_Bt_Menu_pressed"]
 [connection signal="pressed" from="Bt_Annuler" to="." method="_on_Bt_Annuler_pressed"]

@@ -1,7 +1,7 @@
 extends Control
 
-onready var habilete: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/Habilete/Habilete
-onready var endurance: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/Endurance/Endurance
+onready var habilete: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer/Habilete/Habilete
+onready var endurance: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Stats/Stats_Vars/HBoxContainer2/Endurance/Endurance
 
 onready var combat_maitre_endurance: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/EnduMaitre/Endu_GrandMaitre
 onready var combat_monstre_endurance: LineEdit = $ScrollContainer/CenterContainer/VBoxContainer/Combat/Stats_Vars/QuotAtt/QuotAtt
